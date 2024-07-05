@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.game-title {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: xx-large;
+}
+
+.game-title h1 {
+  font-size: 2em;
+  background: linear-gradient(to right, #7cb94a, #7ba4fe);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.game-share {
+  background: linear-gradient(to right, #834ab9, #7beafe);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+#game-container {
+  text-align: center;
+  background: #fbcece;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  margin: 20px auto;
+}
+.cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  border: 1px solid #000;
+  cursor: pointer;
+  background-color: #fff;
+  transition: background-color 0.3s;
+  border-radius: 10px;
+}
+.cell:hover {
+  background-color: #dad6d6;
+}
+.cell.X {
+  color: #ff6347;
+}
+.cell.O {
+  color: #4682b4;
+}
+#scoreboard {
+  margin-top: 20px;
+}
+#scoreboard div {
+  font-size: 1.2em;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #4682b4;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #4169e1;
+}
